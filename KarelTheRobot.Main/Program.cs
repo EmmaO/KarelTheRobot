@@ -6,8 +6,10 @@ using KarelTheRobot.Main.implementations.newspaper;
 using KarelTheRobot.Main.Implementations.CentrePoint;
 using KarelTheRobot.Main.Implementations.EgyptianKarel;
 using KarelTheRobot.Main.Implementations.GenericImplementation;
+using KarelTheRobot.Main.Implementations.HurdleImplementation;
 using KarelTheRobot.Main.Implementations.MorseCode;
 using KarelTheRobot.Main.Implementations.Mountain;
+using KarelTheRobot.Main.Implementations.SprintImplementation;
 using System;
 
 namespace KarelTheRobot
@@ -25,6 +27,11 @@ namespace KarelTheRobot
             Console.WriteLine("4 - Centre point finder");
             Console.WriteLine("5 - Egyptian Karel");
             Console.WriteLine("6 - Morse code Karel");
+            Console.WriteLine("7 - Sprint Karel");
+            Console.WriteLine("8 - Hurdle Karel");
+            Console.WriteLine("9 - Shotput Karel");
+            Console.WriteLine("10 - Shotput cleaner Karel");
+            Console.WriteLine("11 - Playground");
             Console.WriteLine();
             Console.WriteLine("Enter selection: ");
             var selection = Console.ReadLine();
@@ -54,8 +61,20 @@ namespace KarelTheRobot
                     case "6":
                         new MorseCodeImplementation().Run(GetMorseCodeWorld());
                         break;
-                    case "lesson":
-                        new GenericImplementation().Run(GetWorldByManualEntry());
+                    case "7":
+                        new SprintImplementation().Run(GetWorldByManualEntry());
+                        break;
+                    case "8":
+                        new HurdleImplementation().Run(GetWorldByManualEntry());
+                        break;
+                    case "9":
+                        new ShotputImplementation().Run(GetWorld("shotput", 0));
+                        break;
+                    case "10":
+                        new ShotputCleanerImplementation().Run(GetWorld("shotputcleaner", 0));
+                        break;
+                    case "11":
+                        new GenericImplementation().Run(GetWorld("playground", 0));
                         break;
                     default:
                         throw new ArgumentException("Invalid selection! Application shutting down..");
@@ -91,8 +110,13 @@ namespace KarelTheRobot
             var selection = Console.ReadLine();
             Console.Clear();
 
-            return new World(WorldConfig.FromJson($"worlds/lesson/{selection}.json"));
+            return GetWorld(selection, 0);
 
+        }
+
+        private static World GetWorld(string selection, int lessonHomeworkSwitch)
+        {
+            return new World(WorldConfig.FromJson($"worlds/{(lessonHomeworkSwitch == 0 ? ("lesson") : ("homework"))}/{selection}.json"));
         }
 
         private static World GetCentrePointWorld()

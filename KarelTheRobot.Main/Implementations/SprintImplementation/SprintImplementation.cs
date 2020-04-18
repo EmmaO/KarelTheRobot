@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace KarelTheRobot.Main.Implementations.GenericImplementation
+namespace KarelTheRobot.Main.Implementations.SprintImplementation
 {
-    public class GenericImplementation
+    public class SprintImplementation
     {
         public void Run(World world)
         {
+
         }
     }
 }
