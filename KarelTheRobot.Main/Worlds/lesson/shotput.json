@@ -1,0 +1,8 @@
+{
+  "challengeText": "Ensure that Karel wins the shotput contest",
+    "streetCount": 3,
+    "avenueCount": 10,
+    "robot" : { "street": 1, "avenue": 1 },
+    "beepers": [{"street": 1, "avenue": 7}],
+    "walls": []
+}

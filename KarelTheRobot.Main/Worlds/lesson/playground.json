@@ -1,0 +1,8 @@
+{
+  "challengeText": "Show what karel can do",
+    "streetCount": 25,
+    "avenueCount": 25,
+    "robot" : { "street": 13, "avenue": 13 },
+    "beepers": [],
+    "walls": []
+}

@@ -1,0 +1,26 @@
+{
+    "challengeText": "Collect the newspaper from outside of karel's house then return to the starting location",
+    "streetCount": 7,
+    "avenueCount": 9,
+    "robot" : { "street": 5, "avenue": 4 },
+    "beepers": [
+        {"street": 4, "avenue": 8}
+    ],
+    "walls": [
+        {"street": 6, "avenue": 3},
+        {"street": 6, "avenue": 4},
+        {"street": 6, "avenue": 5},
+        {"street": 6, "avenue": 6},
+        {"street": 6, "avenue": 7},
+        {"street": 5, "avenue": 3},
+        {"street": 5, "avenue": 7},
+        {"street": 4, "avenue": 3},
+        {"street": 3, "avenue": 3},
+        {"street": 3, "avenue": 7},
+        {"street": 2, "avenue": 3},
+        {"street": 2, "avenue": 4},
+        {"street": 2, "avenue": 5},
+        {"street": 2, "avenue": 6},
+        {"street": 2, "avenue": 7}
+    ]
+}

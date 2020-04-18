@@ -1,0 +1,8 @@
+{
+  "challengeText": "Create a checkerboard pattern",
+    "streetCount": 6,
+    "avenueCount": 1,
+    "robot" : { "street": 1, "avenue": 1 },
+    "beepers": [],
+    "walls": []
+}

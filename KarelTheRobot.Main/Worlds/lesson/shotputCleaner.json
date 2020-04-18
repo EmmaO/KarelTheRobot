@@ -1,0 +1,14 @@
+{
+  "challengeText": "Karel was caught cheating, clean up the shotput ball things",
+    "streetCount": 3,
+    "avenueCount": 10,
+    "robot" : { "street": 1, "avenue": 1 },
+  "beepers": [
+    {"street": 1, "avenue": 7},
+    {"street": 1, "avenue": 8},
+    {"street": 1, "avenue": 3},
+    {"street": 1, "avenue": 5},
+  
+  ],
+    "walls": []
+}

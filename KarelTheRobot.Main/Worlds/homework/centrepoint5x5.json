@@ -1,0 +1,8 @@
+{
+  "challengeText": "Place a beeper on the centre point",
+    "streetCount": 5,
+    "avenueCount": 5,
+    "robot" : { "street": 1, "avenue": 1 },
+    "beepers": [],
+    "walls": []
+}

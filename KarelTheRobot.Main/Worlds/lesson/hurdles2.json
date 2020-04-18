@@ -1,0 +1,17 @@
+{
+  "challengeText": "Sprint to the end of the track",
+    "streetCount": 3,
+    "avenueCount": 25,
+    "robot" : { "street": 1, "avenue": 1 },
+    "beepers": [],
+  "walls": [
+    {"street": 1, "avenue": 3},
+    {"street": 1, "avenue": 6},
+    {"street": 1, "avenue": 8},
+    {"street": 1, "avenue": 13},
+    {"street": 1, "avenue": 15},
+    {"street": 1, "avenue": 19},
+    {"street": 1, "avenue": 21},
+    {"street": 1, "avenue": 23},
+  ]
+}

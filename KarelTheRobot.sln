@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KarelTheRobot.Library", "KarelTheRobot.Library\KarelTheRobot.Library.csproj", "{9F26A21D-4300-41C3-B7A3-0E9303765B58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KarelTheRobot.Main", "KarelTheRobot.Main\KarelTheRobot.Main.csproj", "{D88D79FE-8A3E-4802-8CAA-F419BDAC0196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F26A21D-4300-41C3-B7A3-0E9303765B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F26A21D-4300-41C3-B7A3-0E9303765B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F26A21D-4300-41C3-B7A3-0E9303765B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F26A21D-4300-41C3-B7A3-0E9303765B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88D79FE-8A3E-4802-8CAA-F419BDAC0196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88D79FE-8A3E-4802-8CAA-F419BDAC0196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88D79FE-8A3E-4802-8CAA-F419BDAC0196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88D79FE-8A3E-4802-8CAA-F419BDAC0196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEBEC907-6035-4642-B6E6-935C974D5CCE}
+	EndGlobalSection
+EndGlobal
