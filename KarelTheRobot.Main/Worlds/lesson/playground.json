@@ -3,6 +3,24 @@
     "streetCount": 25,
     "avenueCount": 25,
     "robot" : { "street": 13, "avenue": 13 },
-    "beepers": [],
-    "walls": []
+  "beepers": [
+    {
+      "street": 14,
+      "avenue": 17
+    }
+  ],
+  "walls": [
+    {
+      "street": 13,
+      "avenue": 16
+    },
+    {
+      "street": 13,
+      "avenue": 17
+    },
+    {
+      "street": 13,
+      "avenue": 18
+    }
+  ]
 }
