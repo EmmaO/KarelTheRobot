@@ -24,6 +24,14 @@ namespace KarelTheRobot.Library
         private List<Wall> _walls;
         private readonly WorldConfig _config;
 
+        public void SetSpeed(int speed)
+        {
+            speed = Math.Min(10, speed);
+            speed = Math.Max(1, speed);
+
+            _sleepInterval = 500 / speed;
+        }
+
         // Note: later elements will be drawn on top of earlier elements
         private IEnumerable<WorldObject> _worldObjects =>
             _beepers

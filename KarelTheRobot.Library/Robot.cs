@@ -172,6 +172,11 @@ namespace KarelTheRobot.Library
             }
         }
 
+        public void SetSpeed(int speed)
+        {
+            _world.SetSpeed(speed);
+        }
+
         internal void SetLocation(int street, int avenue)
         {
             Street = street;
