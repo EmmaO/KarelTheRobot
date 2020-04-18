@@ -34,14 +34,11 @@ namespace KarelTheRobot.Library
         public bool FrontIsClear() =>
             ConfirmOnThen(() =>
                 _world.ObjectTypeAt(PositionAt(_direction)) != ObjectType.Wall);
-        /// <Summary>
-        ///  Is the location to the left of the robot free to move into?
-        /// </Summary>
 
         /// <Summary>
         ///  Is there a beeper at the robot's current location?
         /// </Summary>
-        public bool IsNextToBeeper =>
+        public bool IsOnBeeper =>
             ConfirmOnThen(() =>
                 _world.ObjectTypeAt(Street, Avenue) == ObjectType.Beeper);
 
