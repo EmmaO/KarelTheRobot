@@ -29,7 +29,7 @@ namespace KarelTheRobot.Library
             speed = Math.Min(10, speed);
             speed = Math.Max(1, speed);
 
-            _sleepInterval = 500 / speed;
+            _sleepInterval = 300 / speed;
         }
 
         // Note: later elements will be drawn on top of earlier elements
