@@ -38,31 +38,31 @@ namespace KarelTheRobot.Library
         /// <Summary>
         ///  Is there a beeper at the robot's current location?
         /// </Summary>
-        public bool IsOnBeeper =>
+        public bool IsOnBeeper() =>
             ConfirmOnThen(() =>
                 _world.ObjectTypeAt(Street, Avenue) == ObjectType.Beeper);
 
         /// <Summary>
         ///  Are there any beepers in the robot's bag?
         /// </Summary>
-        public bool AreAnyBeepersInBag => ConfirmOnThen(() => beeperCount > 0);
+        public bool BeepersInBag() => ConfirmOnThen(() => beeperCount > 0);
 
         /// <Summary>
         ///  Is the robot facing north? (i.e. toward the top of the screen)
         /// </Summary>
-        public bool IsFacingNorth => ConfirmOnThen(() => IsFacing(Direction.North));
+        public bool IsFacingNorth() => ConfirmOnThen(() => IsFacing(Direction.North));
         /// <Summary>
         ///  Is the robot facing south? (i.e. toward the bottom of the screen)
         /// </Summary>
-        public bool IsFacingSouth => ConfirmOnThen(() => IsFacing(Direction.South));
+        public bool IsFacingSouth() => ConfirmOnThen(() => IsFacing(Direction.South));
         /// <Summary>
         ///  Is the robot facing east? (i.e. toward the right of the screen)
         /// </Summary>
-        public bool IsFacingEast => ConfirmOnThen(() => IsFacing(Direction.East));
+        public bool IsFacingEast() => ConfirmOnThen(() => IsFacing(Direction.East));
         /// <Summary>
         ///  Is the robot facing west? (i.e. toward the left of the screen)
         /// </Summary>
-        public bool IsFacingWest => ConfirmOnThen(() => IsFacing(Direction.West));
+        public bool IsFacingWest() => ConfirmOnThen(() => IsFacing(Direction.West));
 
         /// <Summary>
         ///  Power up the robot. 

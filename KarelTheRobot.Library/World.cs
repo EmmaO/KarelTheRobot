@@ -26,8 +26,13 @@ namespace KarelTheRobot.Library
 
         public void SetSpeed(int speed)
         {
-            speed = Math.Min(10, speed);
+            speed = Math.Min(11, speed);
             speed = Math.Max(1, speed);
+
+            if (speed == 11)
+            {
+                _sleepInterval = 10;
+            }
 
             _sleepInterval = 300 / speed;
         }
