@@ -167,7 +167,7 @@ namespace KarelTheRobot
             Console.WriteLine();
             Console.WriteLine("1 - 8x8");
             Console.WriteLine("2 - 5x3");
-            Console.WriteLine("3 - 2x3");
+            Console.WriteLine("3 - 2x8");
             Console.WriteLine("4 - 7x1");
             Console.WriteLine("5 - 1x6");
             Console.WriteLine();
@@ -183,7 +183,7 @@ namespace KarelTheRobot
                 case ("2"):
                     return new World(WorldConfig.FromJson("worlds/homework/checkerboard5x3.json"));
                 case ("3"):
-                    return new World(WorldConfig.FromJson("worlds/homework/checkerboard2x3.json"));
+                    return new World(WorldConfig.FromJson("worlds/homework/checkerboard2x8.json"));
                 case ("4"):
                     return new World(WorldConfig.FromJson("worlds/homework/checkerboard7x1.json"));
                 case ("5"):
